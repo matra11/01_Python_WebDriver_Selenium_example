@@ -1,0 +1,36 @@
+# used libraries:
+python.exe -m pip install --upgrade pip
+pip install pytest
+pip install selenium
+pip install pytest-xdist
+
+#HTML report
+pip install pytest-html
+pytest --html=report.html
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+
+
+
+1, Console example :
+********************
+pytest -v -m webtest_SME --wdriver Chrome test_DemoDriver_OneBrowser_OneTests.py
+
+used wdriver  : Ie             /Browser set to Internet explorer /
+used mark     : webtest_pravda /test_one_all_test_2/
+
+
+2, Console example Parallel run :
+*********************************
+
+/run by xdist : pip install pytest-xdist/
+/pytest-parallel not working well at the moment - just one worker is always used/
+
+pytest -n auto test_DemoDriver_OneBrowser_OneTests.py
+
+pytest -n auto test_DemoDriver_OneBrowser_OneTests.py
+/ here one browser for each test is used despite of fact in pytest run just one browser is used for all tests
+
+
