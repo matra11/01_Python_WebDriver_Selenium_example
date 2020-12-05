@@ -1,4 +1,4 @@
-import pytest
+'''import pytest
 from TestBase.TestBase_driver import get_driver_type
 from TestBase.TestBase_logger import *
 import time
@@ -111,4 +111,4 @@ def test_demo3(my_driver):
     button_css = "#root > div > div.products-wrapper > div > div:nth-child(3) > div.product-action > button"
     button = my_driver.find_element_by_css_selector(button_css)
     button.click()
-
+'''
