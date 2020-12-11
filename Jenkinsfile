@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('One_11') {
       steps {
-        retry(count: 1)
         bat 'dir'
       }
     }
