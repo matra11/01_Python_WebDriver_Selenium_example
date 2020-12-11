@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Step_33') {
+      steps {
+        bat 'call venv_enviroment\\\\Scripts\\\\activate'
+      }
+    }
+
   }
 }
