@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Step_22') {
+      steps {
+        bat 'py -3 -m venv venv_enviroment'
+      }
+    }
+
   }
 }
