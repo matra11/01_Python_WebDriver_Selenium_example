@@ -4,6 +4,7 @@ pipeline {
     stage('One_11') {
       steps {
         bat 'dir'
+        bat 'dir'
       }
     }
 
